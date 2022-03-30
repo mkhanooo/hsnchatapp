@@ -12,8 +12,8 @@ config :chat_project,
 
 # Configures the endpoint
 config :chat_project, ChatProjectWeb.Endpoint,
-  url: [host: "localhost"],
-  # url: [scheme: "https", host: "chatapp-demoo.herokuapp.com", port: 443],
+  #url: [host: "localhost"],
+  url: [scheme: "https", host: "hsnchatapp-demoo.herokuapp.com", port: 443],
   render_errors: [view: ChatProjectWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: ChatProject.PubSub,
   live_view: [signing_salt: "R3bYvilB"]

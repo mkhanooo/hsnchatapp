@@ -5,7 +5,6 @@ config :chat_project, ChatProject.Repo,
   username: "postgres",
   password: "postgres",
   hostname: "localhost",
- # hostname: "https://chatapp-demoo.herokuapp.com/",
   database: "chat_project_dev",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10

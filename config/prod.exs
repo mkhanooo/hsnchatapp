@@ -21,8 +21,8 @@ config :logger, level: :info
 config :chat_project, ChatProjectWeb.Endpoint,
 
 load_from_system_env: true,
-url: [scheme: "https", host: "chatapp-demoo.herokuapp.com", port: 443],
-check_origin: ["https://chatapp-demoo.herokuapp.com/"],
+url: [scheme: "https", host: "hsnchatapp.herokuapp.com", port: 443],
+check_origin: ["https://hsnchatapp.herokuapp.com/"],
 force_ssl: [rewrite_on: [:x_forwarded_proto]],
 cache_static_manifest: "priv/static/cache_manifest.json",
 secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE")
